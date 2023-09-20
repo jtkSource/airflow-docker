@@ -13,11 +13,13 @@ airflow-docker$ tree -L 1 .
 ├── docker_mlflow # docker image for mlflow
 ├── logs
 ├── mldb # mlflow db location
-├── mlruns # mlflow root artifact
 ├── plugins # plusings for airflow
 └── requirements.txt # additional python requirements to be installed with airflow
 
 ```
+**Important:**
+
+> The mlruns directory thats needed by the Mlflow server needs to be mounted from a local filesystem '/opt/mlflow/mlruns' and the correct access right needs to be given to this folder
 
 ## Commands
 
